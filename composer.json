@@ -1,5 +1,6 @@
 {
-  "require-dev": {
-    "heroku/heroku-buildpack-php": "*"
-  }
+    "author":"Engels Hernandez",
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "*"
+    }
 }
