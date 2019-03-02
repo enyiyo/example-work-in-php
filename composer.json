@@ -1,8 +1,0 @@
-{
-    "name":"enyiyo/example-work-in-php",
-    "description":"this is just an example work to show",
-    "author":"Engels Hernandez",
-    "require-dev": {
-        "heroku/heroku-buildpack-php": "*"
-    }
-}
