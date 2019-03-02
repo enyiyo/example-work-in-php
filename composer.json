@@ -1,3 +1,5 @@
 {
-    "licence":"GPL-3.0-only"
+  "require-dev": {
+    "heroku/heroku-buildpack-php": "*"
+  }
 }
