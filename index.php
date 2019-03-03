@@ -7,18 +7,18 @@
  
   <?php
  
-   if($_GET)
+   if($_POST)
    {
      echo "El formulario se ejecutó con éxito.<br><br>";
  
      echo "<pre>";
-     print_r($_GET);
+     print_r($_POST);
      echo "</pre >";
    }
  
  ?>
  
-  <form action="" method="get">
+  <form action="" method="post">
  
      <p>
        Dime cuál es tu nombre: <input type="text" name="nombre">
