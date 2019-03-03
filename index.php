@@ -1,12 +1,56 @@
-<html>
-    <head>
-        <title>PHP example work</title>
-    </head>
-    <body>
-        <h1>Título aqu&iacute;</h1>
-        <p>Algo aqu&iacute;</p>
-        <?php echo '<p>Hello, World!</p>'; ?> 
-        <?php echo $_SERVER['HTTP_USER_AGENT']; ?>
-        <?php echo phpinfo(); ?>
-    </body>
-</html>
+<html> 
+ <head>
+      <title>Ejemplo de métodos HTTP en PHP 7</title>
+ </head> 
+ 
+ <body>
+ 
+  <?php
+ 
+   if($_GET)
+   {
+     echo "El formulario se ejecutó con éxito.<br><br>";
+ 
+     echo "<pre>";
+     print_r($_GET);
+     echo "</pre >";
+   }
+ 
+ ?>
+ 
+  <form action="" method="get">
+ 
+     <p>
+       Dime cuál es tu nombre: <input type="text" name="nombre">
+     </p>
+ 
+      <p>
+       Dime cómo se llama tu ciudad: <input type="text" name="ciudad">
+     </p>
+ 
+      <p>
+       ¿En qué año naciste?: 
+          <select name="anoNacimiento">
+           <option value="null">Selecciona un año</option>
+           <?php
+           $anos = 1900;
+         while ($anos < 2000)
+            {
+         ?>
+          <option value="<?=$anos;?>"><?=$anos;?></option>
+          <?php
+           $anos++;
+            }
+         ?>
+          </select>
+     </p>
+ 
+      <p>
+       <input type="submit" value="Validar">
+     </p>
+ 
+    </form>
+ 
+ </body> 
+  </html>
+  
