@@ -5,5 +5,6 @@
     <body>
         <h1>Título aqu&iacute;</h1>
         <p>Algo aqu&iacute;</p>
+        <?php echo '<p>Hello, World!</p>'; ?>
     </body>
 </html>
