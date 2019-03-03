@@ -1,7 +1,6 @@
 <html>
 <head>
 <title>Hello PHP!</title>
-<script src="<?php echo $_ENV['ELASTICIO_WIDGET_URL'] ?>"></script>
 </head>
 <body>
 <h1>PHP Demo of elastic.io contact importer</h1>
